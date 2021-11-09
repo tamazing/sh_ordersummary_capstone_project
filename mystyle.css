@@ -28,33 +28,114 @@ body{
 
 .hero {
   background-repeat: no-repeat;
-}
-.title h4{
-  color:hsl(223, 47%, 23%);
-  font-weight: 700;
+  background-size: contain;
 }
 .content {
-  color: hsl(224, 23%, 55%);
+  padding: 50px 25px;
   text-align: center;
-  background-color: white;
-  height: 70%;
+}
+
+.title {
+  color:hsl(223, 47%, 23%);
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 900;
+
+}
+.p-text{
+  color:hsl(224, 23%, 55%);
+}
+
+.plan-row {
+  background-color: hsl(225, 100%, 98%);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 400px;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 15px;
+  align-content: center;
 }
 
-
-.plan_row {
-   margin-left: 10%;
-   margin-right: 10%;
-   display: flex;
-   flex-direction: row;
-   justify-content: space-between;
+.plan-left{
+  display: flex;
+  align-content: center;
 }
 
+.plan-left div h4{
+
+}
+.plan-left div p {
+  
+}
+.plan-price{margin-left: 20px;}
+
+.plan-period{
+  color:hsl(223, 47%, 23%);
 
 
+}
+.p-text{
+  color:hsl(224, 23%, 55%);
+}
+a{
+   color: hsl(245, 75%, 52%);
+   font-weight: 900;
+
+}
+a:hover{
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+
+}
+.payment-btn {
+  width: 80%;
+  background-color: hsl(245, 75%, 52%);
+  padding: 10px 50px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: hsl(225, 100%, 98%);
+  padding: 13px;
+  font-weight: 700; 
+}
+.payment-btn:hover{
+  background-color: hsl(224, 23%, 55%);
+
+}
+.cancel-btn {
+  width: 80%;
+  background-color: #fff;
+  border: none;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+
+.cancel-btn:hover{
+  color: hsl(223, 47%, 23%);
+
+}
+
+@media (max-wigth:425px) {
+  .body{
+    background-image: url(images/pattern-background-mobile.svg);
+    font-size: 14px;
+  }
+  .container{
+    max-width: 23px;
+  }
+  .title{
+    font-size: 23px;
+  }
+  div.plan-row{
+    padding: 12px;
+  }
+  .plan-left div{
+    margin-left: 10px;
+
+  }
+  .content{
+    padding:9% 6%;
+  }
+ 
+}
 
 /*
 
@@ -78,27 +159,8 @@ body{
   align-content: center;
   justify-content: space-between;
 }
-.btn1{
-  width: 80%;
-  background-color: hsl(245, 75%, 52%);
-  padding: 10px 50px;
-  border-radius: 10px;
-  margin-bottom: 10px;
-  color: hsl(225, 100%, 98%);
-  padding: 13px;
-  font-weight: 700;
-}
-
-.btn2 {
-  width: 80%;
-  background-color: #fff;
-  border: none;
-  color: hsl(224, 23%, 55%);
-  font-weight: 700;
-}
 a{
-  color:hsl(245, 75%, 52%);
-  font-weight: 700;
+  
 }
 
 
@@ -114,7 +176,3 @@ a{
 - Mobile: 375px
 - Desktop: 1440px
 */
-
-@media (max-wigth:375px){
-
-}
