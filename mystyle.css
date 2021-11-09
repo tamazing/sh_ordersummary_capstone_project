@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -5,7 +7,8 @@
   font-size: 16px;
 }
 body{
-  font-family: "Red Hat Display", sans-serif;
+  font-family: 'Red Hat Display',
+  sans-serif;
   min-height: 100vh;
   background-image: url('images/pattern-background-desktop.svg');
   background-repeat: no repeat;
@@ -25,13 +28,8 @@ body{
   border-radius: 20px;
   overflow: hidden;
 }
-
-.hero {
-  background-repeat: no-repeat;
-  background-size: contain;
-}
 .content {
-  padding: 50px 25px;
+  padding: 8px;
   text-align: center;
 }
 
@@ -40,46 +38,40 @@ body{
   font-size: 32px;
   margin-bottom: 20px;
   font-weight: 900;
-
 }
-.p-text{
+.text{
   color:hsl(224, 23%, 55%);
+  margin-bottom: 25px;
 }
 
 .plan-row {
   background-color: hsl(225, 100%, 98%);
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 10px 30px;
   border-radius: 15px;
   align-content: center;
+  margin:5px 20px 0 25px ;
 }
 
 .plan-left{
   display: flex;
   align-content: center;
 }
-
-.plan-left div h4{
-
-}
-.plan-left div p {
-  
-}
 .plan-price{margin-left: 20px;}
 
 .plan-period{
   color:hsl(223, 47%, 23%);
-
-
+  padding-right: 10px;
+  font-size: 14px;
 }
 .p-text{
   color:hsl(224, 23%, 55%);
+  margin-top: 10px;
 }
 a{
    color: hsl(245, 75%, 52%);
    font-weight: 900;
-
 }
 a:hover{
   text-decoration: none;
@@ -89,9 +81,10 @@ a:hover{
 .payment-btn {
   width: 80%;
   background-color: hsl(245, 75%, 52%);
-  padding: 10px 50px;
+  padding: 10px 40px;
   border-radius: 10px;
   margin-bottom: 15px;
+  margin-top: 15px;
   color: hsl(225, 100%, 98%);
   padding: 13px;
   font-weight: 700; 
@@ -106,6 +99,7 @@ a:hover{
   border: none;
   color: hsl(224, 23%, 55%);
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .cancel-btn:hover{
@@ -113,13 +107,14 @@ a:hover{
 
 }
 
-@media (max-wigth:425px) {
+
+@media (max-width:375px) {
   .body{
     background-image: url(images/pattern-background-mobile.svg);
     font-size: 14px;
   }
   .container{
-    max-width: 23px;
+    max-width: 87%;
   }
   .title{
     font-size: 23px;
@@ -129,50 +124,14 @@ a:hover{
   }
   .plan-left div{
     margin-left: 10px;
-
   }
-  .content{
-    padding:9% 6%;
+  .payment-btn, .cancel-btn, a{
+    font-size: 12px;
   }
- 
-}
-
-/*
-
-.title, h4{
-  color: hsl(223, 47%, 23%);
-  text-align: center;
-  font-weight: 700;
-}
-
-
-
-.p_text{
-  flex-direction: column;
-  justify-content: center;
-}
-.plan-row{
-  margin-left: 10%;
-  margin-right: 10%;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: space-between;
-}
-a{
   
 }
 
 
-*/
-/* 
-### Primary - Pale blue: hsl(225, 100%, 94%)
- - Bright blue: hsl(245, 75%, 52%) 
- ### Neutral 
- - Very pale blue: hsl(225, 100%, 98%) 
- - Desaturated blue: hsl(224, 23%, 55%) 
- - Dark blue: hsl(223, 47%, 23%)  u
 
-- Mobile: 375px
-- Desktop: 1440px
-*/
+
+
